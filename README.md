@@ -1,0 +1,1 @@
+# Inherit-From-CocosStudio-Layer
