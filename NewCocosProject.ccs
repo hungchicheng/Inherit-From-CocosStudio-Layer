@@ -4,7 +4,7 @@
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
         <Image Name="HelloWorld.png" />
-        <Project Name="MainScene.csd" Type="Scene" />
+        <Project Name="MainLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

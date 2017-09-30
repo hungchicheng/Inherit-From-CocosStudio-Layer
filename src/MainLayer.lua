@@ -5,18 +5,18 @@ local UI_CSB_FILE = "res/MainLayer.csb"
 
 function MainLayer:create()
 	local studioNode = cc.CSLoader:createNode( UI_CSB_FILE )
-	local view = MainLayer.extend( studioNode )
+	local view = self:extend( studioNode )
 	view:ctor()
 	return view
 end
 
-function MainLayer.extend( target )
+function MainLayer:extend( target )
 	local t = tolua.getpeer( target )
 	if not t then
 		t = {}
 		tolua.setpeer( target, t )
 	end
-	setmetatable( t, MainLayer )
+	setmetatable( t, self )
 	return target
 end
 
